@@ -14,6 +14,7 @@ I want to show off my skills as a Web Developer and tell you all about me in a t
 
 **Who is it for?**
 
+
 If's you want to hire me, it's for your! It's also a template that you can use to build your own portfolio site. 
 
 ## 🚀 Tech Stack
@@ -39,4 +40,5 @@ Comming soon
 ![nodemon](https://img.shields.io/badge/-nodemon-76D04B?logo=nodemon&logoColor=white&style=for-the-badge)
 
 **License:**  
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
