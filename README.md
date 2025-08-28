@@ -1,5 +1,7 @@
 # Gonzalo Romero Portfolio
 
+![screenshot](./frontend/public/gonzalowebdev.jpg)
+
 [![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white&style=for-the-badge)](https://gonzalorwebdev.mywire.org/)
 
 ## Project Introduction
@@ -49,3 +51,20 @@ _Coming soon_
 
 **License:**  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+## Changelog
+
+### v1.0.10
+
+- **Enhanced Server Startup Logging:**  
+  The logger now provides a clear, formatted, and informative output when the server starts, including environment, version, port, and a direct local URL.
+
+- **Project Structure Improvements:**  
+  - **Middleware Restructured:**  
+    All middleware functions (such as request logging) are now organized under the `middleware/` directory for better maintainability.
+  - **Utility Functions Modularized:**  
+    Utility functions (like server health checks and logging) have been moved to a dedicated `utils/` directory, making the codebase cleaner and easier to extend.
+
+---
+
+For more details, see the source code and comments in the respective modules.
