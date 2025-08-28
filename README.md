@@ -1,21 +1,24 @@
 # Gonzalo Romero Portfolio
 
+[![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white&style=for-the-badge)](https://gonzalorwebdev.mywire.org/)
+
 ## Project Introduction
 
 <!-- What is the project about? Why did you build it? Who was it built for? -->
 
 **What is this project?**
 
-This is my Porfolio Paged!
+This is my Portfolio Page!
 
 **Why was it built?**
 
-I want to show off my skills as a Web Developer and tell you all about me in a the way I know best.
+I want to show off my skills as a Web Developer and tell you all about me in the way I know best.
 
 **Who is it for?**
 
+If you want to hire me, it’s for you! It’s also a template that you can use to build your own portfolio site. 
 
-If's you want to hire me, it's for your! It's also a template that you can use to build your own portfolio site. 
+---
 
 ## 🚀 Tech Stack
 
@@ -29,10 +32,15 @@ If's you want to hire me, it's for your! It's also a template that you can use t
 ![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white&style=for-the-badge)
 
 **Database:**  
-
-Comming soon
-
+_Coming soon_  
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?logo=postgresql&logoColor=white&style=for-the-badge)
+
+**Deployment & Infrastructure:**  
+![Render](https://img.shields.io/badge/-Render-46E3B7?logo=render&logoColor=white&style=for-the-badge)
+![Dynu](https://img.shields.io/badge/-Dynu-0085CA?logo=dyndns&logoColor=white&style=for-the-badge)
+
+**Logging & Monitoring:**  
+![Winston](https://img.shields.io/badge/-Winston-000000?logo=nodedotjs&logoColor=white&style=for-the-badge)
 
 **Development Tools:**  
 ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=for-the-badge)
@@ -40,5 +48,4 @@ Comming soon
 ![nodemon](https://img.shields.io/badge/-nodemon-76D04B?logo=nodemon&logoColor=white&style=for-the-badge)
 
 **License:**  
-
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
