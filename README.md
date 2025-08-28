@@ -1,6 +1,6 @@
 # Gonzalo Romero Portfolio
 
-![screenshot](./frontend/public/gonzalowebdev.jpg)
+![screenshot](./readme/gonzalowebdev.jpg)
 
 [![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white&style=for-the-badge)](https://gonzalorwebdev.mywire.org/)
 
