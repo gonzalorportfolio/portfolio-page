@@ -1,37 +1,16 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const winston = require('winston');
+const logger = require('./utils/logger');
+const serverHealthCheck = require('./utils/serverHealth');
+const requestLogger = require('./middleware/requestLogger');
+const { version } = require('./package.json');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Winston logger config
-const logger = winston.createLogger({
-    level: 'info',
-    format: winston.format.combine(
-        winston.format.timestamp(),
-        winston.format.printf(({ timestamp, level, message }) => {
-            return `${timestamp} [${level.toUpperCase()}]: ${message}`;
-        })
-    ),
-    transports: [
-        new winston.transports.Console(),
-        new winston.transports.File({ filename: 'server.log' }) // optional log file
-    ],
-});
-
-// Request logger middleware
-app.use((req, res, next) => {
-    const start = Date.now();
-    res.on('finish', () => {
-        const duration = Date.now() - start;
-        logger.info(`${req.method} ${req.originalUrl} ${res.statusCode} - ${duration}ms`);
-    });
-    next();
-});
-
 // Middleware
+app.use(requestLogger);
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
@@ -50,15 +29,15 @@ app.get('/admin/only/health', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-    logger.info(`Server is running. Visit http://localhost:${PORT}`);
 
-    // Ping every 1 minute
-    setInterval(async () => {
-        try {
-            const response = await fetch("https://portfolio-page-5kft.onrender.com/");
-            logger.info(`Pinged portfolio page: ${response.status}`);
-        } catch (error) {
-            logger.error(`Error pinging portfolio page: ${error.message}`);
-        }
-    }, 60 * 1000);
+    // ✨ Nice startup log
+    logger.info('🚀================ SERVER START =================🚀');
+    logger.info(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
+    logger.info(`📝 App version: v${version}`);
+    logger.info(`📡 Listening on port: ${PORT}`);
+    logger.info(`🏠 Visit: http://localhost:${PORT}`);
+    logger.info('🚀===============================================🚀');
+
+    // Start health check
+    serverHealthCheck("https://portfolio-page-5kft.onrender.com/");
 });
