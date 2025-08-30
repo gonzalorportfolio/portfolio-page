@@ -1,10 +1,14 @@
+// import './About.css';
+import AboutContainer from '../components/AboutContainer';
+import AboutMeIntro from '../components/AboutMeIntro';
 const About = () => {
-	return (
-		<div style={{padding: '2rem', color: '#222'}}>
-			<h1>About</h1>
-			<p>This is the About page.</p>
-		</div>
-	);
+  return (
+		<section className="about-page">
+			<AboutMeIntro />
+			<AboutContainer />
+		</section>
+    
+  );
 };
 
 export default About;
