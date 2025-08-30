@@ -54,7 +54,7 @@ _Coming soon_
 
 ## Changelog
 
-### v1.0.10
+### v1.0.11
 
 - **Enhanced Server Startup Logging:**  
   The logger now provides a clear, formatted, and informative output when the server starts, including environment, version, port, and a direct local URL.
@@ -64,6 +64,8 @@ _Coming soon_
     All middleware functions (such as request logging) are now organized under the `middleware/` directory for better maintainability.
   - **Utility Functions Modularized:**  
     Utility functions (like server health checks and logging) have been moved to a dedicated `utils/` directory, making the codebase cleaner and easier to extend.
+    
+- **Minimal About page with styling added:**
 
 ---
 
